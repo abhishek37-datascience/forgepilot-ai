@@ -1,0 +1,16 @@
+{
+  "short_name": "ForgePilot AI",
+  "name": "ForgePilot AI 🚀 - Personalized Engineering Projects & Mentor",
+  "description": "Empowering engineering students with custom project recommendations, step-by-step blueprints, database structures, viva preparation, and interactive AI mentorship.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#6366f1",
+  "background_color": "#090d16",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

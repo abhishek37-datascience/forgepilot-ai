@@ -1,0 +1,290 @@
+{
+  "users": [
+    {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "name": "Abhishek Kavala",
+      "email": "kavalaabhishek37@gmail.com",
+      "password_hash": "$2a$10$Hz9JsxJWPFGuXBLsShd8KupnDTMzx4Dvii2fMOWKO3G.rQDtS6cfG",
+      "created_at": "2026-06-09T18:47:37.271Z"
+    },
+    {
+      "id": "user_ivtapfivg",
+      "name": "Automation Tester",
+      "email": "test_user_7521@forgepilotai.tech",
+      "password_hash": "$2a$10$02v/i85MRzbuAHjk3kxenOYdja/2NTkcaMC7j5wy1yCu1js.LYWSG",
+      "created_at": "2026-06-09T19:32:17.773Z"
+    },
+    {
+      "id": "user_5k3qkhtdb",
+      "name": "abhishek kavala",
+      "email": "kavalasivaramasaiabhishek37@gmail.com",
+      "password_hash": "$2a$10$5Ae.mubiUXUxpt3wcDM5m.IsqqP/p4z.Fz84tqZ5B4YVzIhOXIX7S",
+      "created_at": "2026-06-09T19:39:59.788Z"
+    },
+    {
+      "id": "user_9ckb59al7",
+      "name": "Automation Tester",
+      "email": "test_user_9828@forgepilotai.tech",
+      "password_hash": "$2a$10$GCMo7Iwmn6vwpNeZtez.oeqy3U5i0WYew9kBzYLcOH/.VN3GlJjAy",
+      "created_at": "2026-06-09T19:53:00.054Z"
+    },
+    {
+      "id": "user_dc7mnyru6",
+      "name": "Automation Tester",
+      "email": "test_user_4551@forgepilotai.tech",
+      "password_hash": "$2a$10$zn3/3rvK1JNBcPyBwWg/rO4jnsRTIkl/L2SoyVQWrIqqoIbtwAi.a",
+      "created_at": "2026-06-09T20:03:59.268Z"
+    },
+    {
+      "id": "user_z0didg3o5",
+      "name": "Automation Tester",
+      "email": "test_user_2132@forgepilotai.tech",
+      "password_hash": "$2a$10$k/RWr9GVYSi0ZppL4BZGlOHq56QyRoHfAHiT1C1miLEjYpFOR7DB6",
+      "created_at": "2026-06-09T20:32:57.894Z"
+    }
+  ],
+  "profiles": [
+    {
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "branch": "Computer Science Engineering (CSE)",
+      "specialization": "Artificial Intelligence",
+      "languages": [
+        "Python",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "skill_level": "Intermediate",
+      "academic_year": "3rd Year",
+      "updated_at": "2026-06-09T18:47:37.342Z"
+    },
+    {
+      "user_id": "user_ivtapfivg",
+      "branch": "Electronics and Communication Engineering (ECE)",
+      "specialization": "Internet of Things (IoT)",
+      "languages": [
+        "C++",
+        "Python"
+      ],
+      "skill_level": "Beginner",
+      "academic_year": "2nd Year",
+      "updated_at": "2026-06-09T19:32:17.840Z"
+    },
+    {
+      "user_id": "user_5k3qkhtdb",
+      "branch": "Computer Science Engineering (CSE)",
+      "specialization": "None",
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "skill_level": "Beginner",
+      "academic_year": "1st Year",
+      "updated_at": "2026-06-09T19:55:32.308Z"
+    },
+    {
+      "user_id": "user_9ckb59al7",
+      "branch": "Electronics and Communication Engineering (ECE)",
+      "specialization": "Internet of Things (IoT)",
+      "languages": [
+        "C++",
+        "Python"
+      ],
+      "skill_level": "Beginner",
+      "academic_year": "2nd Year",
+      "updated_at": "2026-06-09T19:53:00.129Z"
+    },
+    {
+      "user_id": "user_dc7mnyru6",
+      "branch": "Electronics and Communication Engineering (ECE)",
+      "specialization": "Internet of Things (IoT)",
+      "languages": [
+        "C++",
+        "Python"
+      ],
+      "skill_level": "Beginner",
+      "academic_year": "2nd Year",
+      "updated_at": "2026-06-09T20:03:59.327Z"
+    },
+    {
+      "user_id": "user_z0didg3o5",
+      "branch": "Electronics and Communication Engineering (ECE)",
+      "specialization": "Internet of Things (IoT)",
+      "languages": [
+        "C++",
+        "Python"
+      ],
+      "skill_level": "Beginner",
+      "academic_year": "2nd Year",
+      "updated_at": "2026-06-09T20:32:57.969Z"
+    }
+  ],
+  "projects": [],
+  "saved_projects": [
+    {
+      "user_id": "user_ivtapfivg",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T19:32:17.844Z"
+    },
+    {
+      "user_id": "user_9ckb59al7",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T19:53:00.134Z"
+    },
+    {
+      "user_id": "user_dc7mnyru6",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T20:03:59.331Z"
+    },
+    {
+      "user_id": "user_z0didg3o5",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T20:32:57.974Z"
+    }
+  ],
+  "favorite_projects": [
+    {
+      "user_id": "user_ivtapfivg",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T19:32:17.846Z"
+    },
+    {
+      "user_id": "user_9ckb59al7",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T19:53:00.136Z"
+    },
+    {
+      "user_id": "user_dc7mnyru6",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T20:03:59.333Z"
+    },
+    {
+      "user_id": "user_z0didg3o5",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-09T20:32:57.977Z"
+    }
+  ],
+  "completed_projects": [],
+  "search_history": [],
+  "viewed_projects": [
+    {
+      "user_id": "user_ivtapfivg",
+      "project_id": "proj_001_iot_weather",
+      "viewed_at": "2026-06-09T19:32:17.842Z"
+    },
+    {
+      "user_id": "user_5k3qkhtdb",
+      "project_id": "p15",
+      "viewed_at": "2026-06-09T19:55:36.610Z"
+    },
+    {
+      "user_id": "user_9ckb59al7",
+      "project_id": "proj_001_iot_weather",
+      "viewed_at": "2026-06-09T19:53:00.132Z"
+    },
+    {
+      "user_id": "user_dc7mnyru6",
+      "project_id": "proj_001_iot_weather",
+      "viewed_at": "2026-06-09T20:03:59.330Z"
+    },
+    {
+      "user_id": "user_5k3qkhtdb",
+      "project_id": "p4",
+      "viewed_at": "2026-06-09T20:05:37.252Z"
+    },
+    {
+      "user_id": "user_z0didg3o5",
+      "project_id": "proj_001_iot_weather",
+      "viewed_at": "2026-06-09T20:32:57.972Z"
+    }
+  ],
+  "project_progress": [
+    {
+      "user_id": "user_ivtapfivg",
+      "project_id": "proj_001_iot_weather",
+      "percent": 20,
+      "completed_steps": [
+        1
+      ],
+      "updated_at": "2026-06-09T19:32:17.849Z"
+    },
+    {
+      "user_id": "user_5k3qkhtdb",
+      "project_id": "p15",
+      "percent": 0,
+      "completed_steps": [],
+      "updated_at": "2026-06-09T19:41:36.056Z"
+    },
+    {
+      "user_id": "user_9ckb59al7",
+      "project_id": "proj_001_iot_weather",
+      "percent": 20,
+      "completed_steps": [
+        1
+      ],
+      "updated_at": "2026-06-09T19:53:00.139Z"
+    },
+    {
+      "user_id": "user_dc7mnyru6",
+      "project_id": "proj_001_iot_weather",
+      "percent": 20,
+      "completed_steps": [
+        1
+      ],
+      "updated_at": "2026-06-09T20:03:59.335Z"
+    },
+    {
+      "user_id": "user_5k3qkhtdb",
+      "project_id": "p4",
+      "percent": 0,
+      "completed_steps": [],
+      "updated_at": "2026-06-09T20:05:59.107Z"
+    },
+    {
+      "user_id": "user_z0didg3o5",
+      "project_id": "proj_001_iot_weather",
+      "percent": 20,
+      "completed_steps": [
+        1
+      ],
+      "updated_at": "2026-06-09T20:32:57.981Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": 977420,
+      "user_id": null,
+      "name": "Automation Tester",
+      "email": "test_user_7521@forgepilotai.tech",
+      "feedback_type": "bug_report",
+      "details": "Verified the layout, works excellent.",
+      "created_at": "2026-06-09T19:32:17.852Z"
+    },
+    {
+      "id": 738435,
+      "user_id": null,
+      "name": "Automation Tester",
+      "email": "test_user_9828@forgepilotai.tech",
+      "feedback_type": "bug_report",
+      "details": "Verified the layout, works excellent.",
+      "created_at": "2026-06-09T19:53:00.141Z"
+    },
+    {
+      "id": 414028,
+      "user_id": null,
+      "name": "Automation Tester",
+      "email": "test_user_4551@forgepilotai.tech",
+      "feedback_type": "bug_report",
+      "details": "Verified the layout, works excellent.",
+      "created_at": "2026-06-09T20:03:59.336Z"
+    },
+    {
+      "id": 531095,
+      "user_id": null,
+      "name": "Automation Tester",
+      "email": "test_user_2132@forgepilotai.tech",
+      "feedback_type": "bug_report",
+      "details": "Verified the layout, works excellent.",
+      "created_at": "2026-06-09T20:32:57.984Z"
+    }
+  ]
+}
