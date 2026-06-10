@@ -19,7 +19,7 @@ interface AboutProps {
 export default function About({ theme }: AboutProps) {
   const devDetails = {
     name: 'Abhishek Kavala',
-    role: 'Full Stack & Data Science Engineer',
+    role: 'AI Enthusiast',
     primaryEmail: 'kavalaabhishek37@gmail.com',
     secondaryEmail: 'kavalasivaramasaiabhishek37@gmail.com',
     github: 'https://github.com/abhishek37-datascience',

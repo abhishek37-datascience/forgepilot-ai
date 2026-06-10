@@ -48,6 +48,13 @@
       "email": "test_user_4030@forgepilotai.tech",
       "password_hash": "$2a$10$2LuVMRgAFK7J9BHCW6SEzumUTMkkiajyKhw2Le7Pl9bBHv5XWqHCG",
       "created_at": "2026-06-10T02:21:29.952Z"
+    },
+    {
+      "id": "user_a6kqxyjvq",
+      "name": "yadhu vamsi",
+      "email": "yadhuvamsikavala@gmail.com",
+      "password_hash": "$2a$10$B3.x6HF/YhRY0eXZW7cUOODGOCg0V7EnWeFBcu4AfVnLQM8QQKG0.",
+      "created_at": "2026-06-10T13:09:56.685Z"
     }
   ],
   "profiles": [

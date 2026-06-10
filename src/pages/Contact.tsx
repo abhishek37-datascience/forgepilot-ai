@@ -220,7 +220,7 @@ export default function Contact({ theme }: ContactProps) {
             <div>
               <span className="text-xxs font-extrabold uppercase text-indigo-400 tracking-wider">Project Author</span>
               <h3 className="text-xl font-bold font-heading mt-1 text-slate-200">Abhishek Kavala</h3>
-              <p className="text-xs text-slate-400 mt-0.5">Full Stack & Data Science Engineer</p>
+              <p className="text-xs text-slate-400 mt-0.5">AI Enthusiast</p>
             </div>
 
             <div className="border-t border-slate-800/40 pt-4 space-y-4 text-xs">

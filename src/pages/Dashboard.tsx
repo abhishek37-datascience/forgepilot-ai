@@ -466,7 +466,7 @@ export default function Dashboard({
                 </div>
                 <div>
                   <h3 className="text-xs font-bold text-slate-205 text-slate-200">Abhishek Kavala</h3>
-                  <p className="text-[10px] text-slate-500">Full Stack & Data Science Engineer</p>
+                  <p className="text-[10px] text-slate-500">AI Enthusiast</p>
                 </div>
               </div>
 
