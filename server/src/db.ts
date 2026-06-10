@@ -39,6 +39,10 @@ const initialDb = {
       languages: ['Python', 'JavaScript', 'TypeScript'],
       skill_level: 'Intermediate',
       academic_year: '3rd Year',
+      github: 'https://github.com/abhishek37-datascience',
+      linkedin: 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1',
+      primary_email: 'kavalaabhishek37@gmail.com',
+      secondary_email: 'kavalasivaramasaiabhishek37@gmail.com',
       updated_at: new Date().toISOString()
     }
   ] as any[],
@@ -162,7 +166,7 @@ async function runLocalQuery(text: string, params: any[]): Promise<{ rows: any[]
     return { rows: profile ? [profile] : [], rowCount: profile ? 1 : 0 };
   }
 
-  // 6. INSERT INTO profiles (user_id, branch, specialization, languages, skill_level, academic_year) ON CONFLICT
+  // 6. INSERT INTO profiles (user_id, branch, specialization, languages, skill_level, academic_year, github, linkedin, primary_email, secondary_email) ON CONFLICT
   if (sql.match(/INSERT INTO profiles/i)) {
     let profile = db.profiles.find((p: any) => p.user_id === params[0]);
     if (profile) {
@@ -171,6 +175,10 @@ async function runLocalQuery(text: string, params: any[]): Promise<{ rows: any[]
       profile.languages = params[3];
       profile.skill_level = params[4];
       profile.academic_year = params[5];
+      profile.github = params[6] || 'https://github.com/abhishek37-datascience';
+      profile.linkedin = params[7] || 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1';
+      profile.primary_email = params[8] || 'kavalaabhishek37@gmail.com';
+      profile.secondary_email = params[9] || 'kavalasivaramasaiabhishek37@gmail.com';
       profile.updated_at = new Date().toISOString();
     } else {
       profile = {
@@ -180,6 +188,10 @@ async function runLocalQuery(text: string, params: any[]): Promise<{ rows: any[]
         languages: params[3],
         skill_level: params[4],
         academic_year: params[5],
+        github: params[6] || 'https://github.com/abhishek37-datascience',
+        linkedin: params[7] || 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1',
+        primary_email: params[8] || 'kavalaabhishek37@gmail.com',
+        secondary_email: params[9] || 'kavalasivaramasaiabhishek37@gmail.com',
         updated_at: new Date().toISOString()
       };
       db.profiles.push(profile);

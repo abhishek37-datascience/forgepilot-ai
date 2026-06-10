@@ -1,5 +1,17 @@
 import React, { useState } from 'react';
-import { Sparkles, Sliders, Code2, GraduationCap, ChevronLeft, ChevronRight, Check, Search, X } from 'lucide-react';
+import { Sparkles, Sliders, Code2, GraduationCap, ChevronLeft, ChevronRight, Check, Search, X, Mail } from 'lucide-react';
+
+const GithubIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={`${className} fill-current`} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+  </svg>
+);
+
+const LinkedinIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={`${className} fill-current`} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+  </svg>
+);
 
 interface ProfileSetupProps {
   theme: 'dark' | 'light';
@@ -9,6 +21,10 @@ interface ProfileSetupProps {
     languages: string[];
     skillLevel: string;
     academicYear: string;
+    github?: string;
+    linkedin?: string;
+    primaryEmail?: string;
+    secondaryEmail?: string;
   }) => void;
 }
 
@@ -21,6 +37,10 @@ export default function ProfileSetup({ theme, saveProfile }: ProfileSetupProps) 
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>([]);
   const [skillLevel, setSkillLevel] = useState('');
   const [academicYear, setAcademicYear] = useState('');
+  const [github, setGithub] = useState('https://github.com/abhishek37-datascience');
+  const [linkedin, setLinkedin] = useState('https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1');
+  const [primaryEmail, setPrimaryEmail] = useState('kavalaabhishek37@gmail.com');
+  const [secondaryEmail, setSecondaryEmail] = useState('kavalasivaramasaiabhishek37@gmail.com');
 
   // Search filter for languages
   const [langSearch, setLangSearch] = useState('');
@@ -120,7 +140,11 @@ export default function ProfileSetup({ theme, saveProfile }: ProfileSetupProps) 
       specialization: finalSpecialization,
       languages: finalLanguages,
       skillLevel: finalSkillLevel,
-      academicYear: finalAcademicYear
+      academicYear: finalAcademicYear,
+      github: github || 'https://github.com/abhishek37-datascience',
+      linkedin: linkedin || 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1',
+      primaryEmail: primaryEmail || 'kavalaabhishek37@gmail.com',
+      secondaryEmail: secondaryEmail || 'kavalasivaramasaiabhishek37@gmail.com'
     });
   };
 
@@ -149,7 +173,7 @@ export default function ProfileSetup({ theme, saveProfile }: ProfileSetupProps) 
 
           {/* Progress Bar */}
           <div className="mt-6 flex items-center justify-center space-x-2">
-            {[1, 2, 3].map((s) => (
+            {[1, 2, 3, 4].map((s) => (
               <React.Fragment key={s}>
                 <div
                   className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all border ${
@@ -162,7 +186,7 @@ export default function ProfileSetup({ theme, saveProfile }: ProfileSetupProps) 
                 >
                   {step > s ? <Check className="w-4 h-4" /> : s}
                 </div>
-                {s < 3 && (
+                {s < 4 && (
                   <div
                     className={`h-0.5 w-16 transition-all ${
                       step > s ? 'bg-indigo-500' : theme === 'dark' ? 'bg-slate-800' : 'bg-slate-200'
@@ -367,6 +391,92 @@ export default function ProfileSetup({ theme, saveProfile }: ProfileSetupProps) 
             </div>
           )}
 
+          {/* Step 4: Social Links & Contacts */}
+          {step === 4 && (
+            <div className="space-y-4 animate-float-delayed">
+              <div>
+                <label className={`block text-xs font-semibold uppercase tracking-wider mb-2 flex items-center ${
+                  theme === 'dark' ? 'text-slate-400' : 'text-slate-600'
+                }`}>
+                  <GithubIcon className="w-4 h-4 mr-1.5 text-indigo-400" />
+                  GitHub Profile Link
+                </label>
+                <input
+                  type="url"
+                  value={github}
+                  onChange={(e) => setGithub(e.target.value)}
+                  placeholder="https://github.com/yourusername"
+                  className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-all outline-none ${
+                    theme === 'dark'
+                      ? 'border-slate-800 bg-slate-900/40 text-slate-205 text-slate-200 focus:border-indigo-500 focus:bg-slate-900'
+                      : 'border-slate-200 bg-white text-slate-800 focus:border-indigo-500'
+                  }`}
+                />
+              </div>
+
+              <div>
+                <label className={`block text-xs font-semibold uppercase tracking-wider mb-2 flex items-center ${
+                  theme === 'dark' ? 'text-slate-400' : 'text-slate-600'
+                }`}>
+                  <LinkedinIcon className="w-4 h-4 mr-1.5 text-indigo-400" />
+                  LinkedIn Profile Link
+                </label>
+                <input
+                  type="url"
+                  value={linkedin}
+                  onChange={(e) => setLinkedin(e.target.value)}
+                  placeholder="https://www.linkedin.com/in/yourusername"
+                  className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-all outline-none ${
+                    theme === 'dark'
+                      ? 'border-slate-800 bg-slate-900/40 text-slate-205 text-slate-200 focus:border-indigo-500 focus:bg-slate-900'
+                      : 'border-slate-200 bg-white text-slate-800 focus:border-indigo-500'
+                  }`}
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className={`block text-xs font-semibold uppercase tracking-wider mb-2 flex items-center ${
+                    theme === 'dark' ? 'text-slate-400' : 'text-slate-600'
+                  }`}>
+                    <Mail className="w-4 h-4 mr-1.5 text-indigo-400" />
+                    Primary Email
+                  </label>
+                  <input
+                    type="email"
+                    value={primaryEmail}
+                    onChange={(e) => setPrimaryEmail(e.target.value)}
+                    placeholder="kavala@example.com"
+                    className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-all outline-none ${
+                      theme === 'dark'
+                        ? 'border-slate-800 bg-slate-900/40 text-slate-205 text-slate-200 focus:border-indigo-500 focus:bg-slate-900'
+                        : 'border-slate-200 bg-white text-slate-800 focus:border-indigo-500'
+                    }`}
+                  />
+                </div>
+                <div>
+                  <label className={`block text-xs font-semibold uppercase tracking-wider mb-2 flex items-center ${
+                    theme === 'dark' ? 'text-slate-400' : 'text-slate-600'
+                  }`}>
+                    <Mail className="w-4 h-4 mr-1.5 text-indigo-400" />
+                    Secondary Email
+                  </label>
+                  <input
+                    type="email"
+                    value={secondaryEmail}
+                    onChange={(e) => setSecondaryEmail(e.target.value)}
+                    placeholder="kavalasivaramasaiabhishek37@gmail.com"
+                    className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-all outline-none ${
+                      theme === 'dark'
+                        ? 'border-slate-800 bg-slate-900/40 text-slate-205 text-slate-200 focus:border-indigo-500 focus:bg-slate-900'
+                        : 'border-slate-200 bg-white text-slate-800 focus:border-indigo-500'
+                    }`}
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Buttons Navigation */}
           <div className="flex justify-between items-center pt-4 border-t border-slate-900/20">
             {step > 1 ? (
@@ -386,7 +496,7 @@ export default function ProfileSetup({ theme, saveProfile }: ProfileSetupProps) 
               <div />
             )}
 
-            {step < 3 ? (
+            {step < 4 ? (
               <button
                 type="button"
                 onClick={handleNext}

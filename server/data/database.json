@@ -41,6 +41,13 @@
       "email": "test_user_2132@forgepilotai.tech",
       "password_hash": "$2a$10$k/RWr9GVYSi0ZppL4BZGlOHq56QyRoHfAHiT1C1miLEjYpFOR7DB6",
       "created_at": "2026-06-09T20:32:57.894Z"
+    },
+    {
+      "id": "user_ne822j8sy",
+      "name": "Automation Tester",
+      "email": "test_user_4030@forgepilotai.tech",
+      "password_hash": "$2a$10$2LuVMRgAFK7J9BHCW6SEzumUTMkkiajyKhw2Le7Pl9bBHv5XWqHCG",
+      "created_at": "2026-06-10T02:21:29.952Z"
     }
   ],
   "profiles": [
@@ -55,6 +62,10 @@
       ],
       "skill_level": "Intermediate",
       "academic_year": "3rd Year",
+      "github": "https://github.com/abhishek37-datascience",
+      "linkedin": "https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1",
+      "primary_email": "kavalaabhishek37@gmail.com",
+      "secondary_email": "kavalasivaramasaiabhishek37@gmail.com",
       "updated_at": "2026-06-09T18:47:37.342Z"
     },
     {
@@ -116,6 +127,22 @@
       "skill_level": "Beginner",
       "academic_year": "2nd Year",
       "updated_at": "2026-06-09T20:32:57.969Z"
+    },
+    {
+      "user_id": "user_ne822j8sy",
+      "branch": "Electronics and Communication Engineering (ECE)",
+      "specialization": "Internet of Things (IoT)",
+      "languages": [
+        "C++",
+        "Python"
+      ],
+      "skill_level": "Beginner",
+      "academic_year": "2nd Year",
+      "github": "https://github.com/abhishek37-datascience",
+      "linkedin": "https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1",
+      "primary_email": "kavalaabhishek37@gmail.com",
+      "secondary_email": "kavalasivaramasaiabhishek37@gmail.com",
+      "updated_at": "2026-06-10T02:21:30.020Z"
     }
   ],
   "projects": [],
@@ -139,6 +166,11 @@
       "user_id": "user_z0didg3o5",
       "project_id": "proj_001_iot_weather",
       "created_at": "2026-06-09T20:32:57.974Z"
+    },
+    {
+      "user_id": "user_ne822j8sy",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-10T02:21:30.026Z"
     }
   ],
   "favorite_projects": [
@@ -161,6 +193,11 @@
       "user_id": "user_z0didg3o5",
       "project_id": "proj_001_iot_weather",
       "created_at": "2026-06-09T20:32:57.977Z"
+    },
+    {
+      "user_id": "user_ne822j8sy",
+      "project_id": "proj_001_iot_weather",
+      "created_at": "2026-06-10T02:21:30.029Z"
     }
   ],
   "completed_projects": [],
@@ -195,6 +232,11 @@
       "user_id": "user_z0didg3o5",
       "project_id": "proj_001_iot_weather",
       "viewed_at": "2026-06-09T20:32:57.972Z"
+    },
+    {
+      "user_id": "user_ne822j8sy",
+      "project_id": "proj_001_iot_weather",
+      "viewed_at": "2026-06-10T02:21:30.023Z"
     }
   ],
   "project_progress": [
@@ -247,6 +289,15 @@
         1
       ],
       "updated_at": "2026-06-09T20:32:57.981Z"
+    },
+    {
+      "user_id": "user_ne822j8sy",
+      "project_id": "proj_001_iot_weather",
+      "percent": 20,
+      "completed_steps": [
+        1
+      ],
+      "updated_at": "2026-06-10T02:21:30.031Z"
     }
   ],
   "feedback": [
@@ -285,6 +336,15 @@
       "feedback_type": "bug_report",
       "details": "Verified the layout, works excellent.",
       "created_at": "2026-06-09T20:32:57.984Z"
+    },
+    {
+      "id": 505331,
+      "user_id": null,
+      "name": "Automation Tester",
+      "email": "test_user_4030@forgepilotai.tech",
+      "feedback_type": "bug_report",
+      "details": "Verified the layout, works excellent.",
+      "created_at": "2026-06-10T02:21:30.035Z"
     }
   ]
 }

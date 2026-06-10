@@ -22,6 +22,10 @@ interface UserProfile {
   languages: string[];
   skillLevel: string;
   academicYear: string;
+  github?: string;
+  linkedin?: string;
+  primaryEmail?: string;
+  secondaryEmail?: string;
 }
 
 export default function App() {
@@ -72,7 +76,11 @@ export default function App() {
             specialization: profData.specialization,
             languages: profData.languages,
             skillLevel: profData.skill_level,
-            academicYear: profData.academic_year
+            academicYear: profData.academic_year,
+            github: profData.github || 'https://github.com/abhishek37-datascience',
+            linkedin: profData.linkedin || 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1',
+            primaryEmail: profData.primary_email || 'kavalaabhishek37@gmail.com',
+            secondaryEmail: profData.secondary_email || 'kavalasivaramasaiabhishek37@gmail.com'
           };
           setProfile(mappedProfile);
           localStorage.setItem('forge_profile', JSON.stringify(mappedProfile));
@@ -115,7 +123,11 @@ export default function App() {
           specialization: profData.specialization,
           languages: profData.languages,
           skillLevel: profData.skill_level,
-          academicYear: profData.academic_year
+          academicYear: profData.academic_year,
+          github: profData.github || 'https://github.com/abhishek37-datascience',
+          linkedin: profData.linkedin || 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1',
+          primaryEmail: profData.primary_email || 'kavalaabhishek37@gmail.com',
+          secondaryEmail: profData.secondary_email || 'kavalasivaramasaiabhishek37@gmail.com'
         };
         setProfile(mappedProfile);
         localStorage.setItem('forge_profile', JSON.stringify(mappedProfile));

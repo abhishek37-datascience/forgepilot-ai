@@ -73,13 +73,24 @@ export default function Footer({ theme, setCurrentPage }: FooterProps) {
             <p className="text-sm mb-3">
               Need assistance? Email our development desk:
             </p>
-            <a 
-              href="mailto:kavalaabhishek37@gmail.com" 
-              className="flex items-center space-x-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
-            >
-              <Mail className="w-4 h-4" />
-              <span>kavalaabhishek37@gmail.com</span>
-            </a>
+            <div className="space-y-2">
+              <a 
+                href="mailto:kavalaabhishek37@gmail.com" 
+                className="flex items-center space-x-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
+                title="Primary Email"
+              >
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                <span>kavalaabhishek37@gmail.com</span>
+              </a>
+              <a 
+                href="mailto:kavalasivaramasaiabhishek37@gmail.com" 
+                className="flex items-center space-x-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
+                title="Secondary Email"
+              >
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                <span>kavalasivaramasaiabhishek37@gmail.com</span>
+              </a>
+            </div>
           </div>
         </div>
 

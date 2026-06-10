@@ -17,8 +17,17 @@ CREATE TABLE IF NOT EXISTS profiles (
   languages VARCHAR(50)[] NOT NULL,
   skill_level VARCHAR(50) NOT NULL,
   academic_year VARCHAR(50) NOT NULL,
+  github VARCHAR(255) DEFAULT 'https://github.com/abhishek37-datascience',
+  linkedin VARCHAR(255) DEFAULT 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1',
+  primary_email VARCHAR(255) DEFAULT 'kavalaabhishek37@gmail.com',
+  secondary_email VARCHAR(255) DEFAULT 'kavalasivaramasaiabhishek37@gmail.com',
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+ALTER TABLE profiles ADD COLUMN IF NOT EXISTS github VARCHAR(255) DEFAULT 'https://github.com/abhishek37-datascience';
+ALTER TABLE profiles ADD COLUMN IF NOT EXISTS linkedin VARCHAR(255) DEFAULT 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1';
+ALTER TABLE profiles ADD COLUMN IF NOT EXISTS primary_email VARCHAR(255) DEFAULT 'kavalaabhishek37@gmail.com';
+ALTER TABLE profiles ADD COLUMN IF NOT EXISTS secondary_email VARCHAR(255) DEFAULT 'kavalasivaramasaiabhishek37@gmail.com';
 
 -- 3. Projects Catalog table (seeding cache)
 CREATE TABLE IF NOT EXISTS projects (
@@ -104,6 +113,6 @@ VALUES ('00000000-0000-0000-0000-000000000001', 'Abhishek Kavala', 'kavalaabhish
 ON CONFLICT (email) DO NOTHING;
 
 -- 12. Seed default profile for demo user
-INSERT INTO profiles (user_id, branch, specialization, languages, skill_level, academic_year)
-VALUES ('00000000-0000-0000-0000-000000000001', 'Computer Science Engineering (CSE)', 'Artificial Intelligence', ARRAY['Python', 'JavaScript', 'TypeScript'], 'Intermediate', '3rd Year')
+INSERT INTO profiles (user_id, branch, specialization, languages, skill_level, academic_year, github, linkedin, primary_email, secondary_email)
+VALUES ('00000000-0000-0000-0000-000000000001', 'Computer Science Engineering (CSE)', 'Artificial Intelligence', ARRAY['Python', 'JavaScript', 'TypeScript'], 'Intermediate', '3rd Year', 'https://github.com/abhishek37-datascience', 'https://www.linkedin.com/in/kavala-sivaramasaiabhishek-586b623a1', 'kavalaabhishek37@gmail.com', 'kavalasivaramasaiabhishek37@gmail.com')
 ON CONFLICT (user_id) DO NOTHING;

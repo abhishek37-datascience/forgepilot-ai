@@ -67,6 +67,10 @@ export const api = {
         languages: string[];
         skill_level: string;
         academic_year: string;
+        github?: string;
+        linkedin?: string;
+        primary_email?: string;
+        secondary_email?: string;
       }>('/profile'),
 
     save: (profileData: {
@@ -75,6 +79,10 @@ export const api = {
       languages: string[];
       skillLevel: string;
       academicYear: string;
+      github?: string;
+      linkedin?: string;
+      primaryEmail?: string;
+      secondaryEmail?: string;
     }) =>
       apiRequest<{ message: string; profile: any }>('/profile', {
         method: 'POST',
